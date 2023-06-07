@@ -1,0 +1,45 @@
+{
+    "name": "php-jsonrpc/poc-monorepo-pkg1",
+    "description": "Pkg1 from poc-monorepo",
+    "license": "MIT",
+    "type": "library",
+    "support": {
+        "issues": "https://github.com/php-jsonrpc/poc-monorepo/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpJsonrpc\\PocMonorepoPkg1\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "ext-json": "*",
+        "behat/behat": "^3.9.0",
+        "dvdoug/behat-code-coverage": "^5.0",
+        "jangregor/phpstan-prophecy": "^1.0",
+        "phpspec/prophecy": "^1.15",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpunit/phpunit": "^9.6",
+        "squizlabs/php_codesniffer": "^3.5",
+        "yoanm/php-unit-extended": "^2.0"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}

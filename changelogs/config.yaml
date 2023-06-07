@@ -1,0 +1,37 @@
+title: php-jsonrpc/poc-monorepo-pkg1
+changelog_filename_template: ./CHANGELOG.rst
+changelog_filename_version_depth: 2
+changes_file: changelog.yaml
+is_other_project: true
+keep_fragments: false
+prevent_known_fragments: true
+mention_ancestor: false
+notesdir: fragments
+prelude_section_name: release_summary
+prelude_section_title: Release Summary
+sanitize_changelog: true
+sections:
+- - breaking_changes
+  - Breaking Changes
+- - security_fixes
+  - Security Fixes
+- - major_changes
+  - Major Changes
+- - minor_changes
+  - Minor Changes
+- - deprecated_features
+  - Deprecated Features
+- - removed_features
+  - Removed Features (previously deprecated)
+- - bugfixes
+  - Bugfixes
+- - known_issues
+  - Known Issues
+trivial_section_name: trivial
+use_semantic_versioning: true
+
+# Ansible related config => useless
+ignore_other_fragment_extensions: true
+changes_format: combined
+new_plugins_after_name: removed_features
+use_fqcn: true
